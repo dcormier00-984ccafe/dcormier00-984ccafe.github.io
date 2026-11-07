@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>不良人研究所导航-国漫不良人专题资料站_角色解析与追番入口</title>
+<meta name="description" content="不良人研究所导航是围绕国漫《画江湖之不良人》打造的内容专题站，汇集角色解析、剧情梳理、追番入口、名场面盘点、同人资讯与FAQ答疑，帮新老观众快速找到想看的不良人资料与更新动态。">
+<meta name="keywords" content="不良人研究所导航,画江湖之不良人,不良人角色解析,不良人追番,不良人剧情梳理">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b2338'/%3E%3Ctext x='32' y='43' font-size='30' text-anchor='middle' fill='%23e8b45c' font-family='serif'%3E不%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+--ink:#1b2338;
+--ink2:#2b3550;
+--gold:#e8b45c;
+--gold-d:#c9922f;
+--paper:#f7f4ee;
+--card:#ffffff;
+--line:#e6e0d4;
+--muted:#7a7f8e;
+--red:#b8452c;
+--shadow:0 6px 22px rgba(27,35,56,.08);
+--shadow-h:0 12px 30px rgba(27,35,56,.15);
+--r:14px;
+--max:1200px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB",system-ui,sans-serif;
+background:var(--paper);color:var(--ink);line-height:1.75;font-size:15px;
+background-image:radial-gradient(circle at 12% 0%,rgba(232,180,92,.10),transparent 45%),
+radial-gradient(circle at 88% 12%,rgba(184,69,44,.06),transparent 40%);
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 18px}
+h1,h2,h3,h4{line-height:1.4;font-weight:700}
+h2{font-size:23px;margin-bottom:6px}
+h3{font-size:17px}
+.sec{padding:44px 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;border-bottom:2px solid var(--line);padding-bottom:12px;margin-bottom:26px;flex-wrap:wrap}
+.sec-head .st{display:flex;align-items:center;gap:10px}
+.sec-head .bar{width:5px;height:24px;border-radius:3px;background:linear-gradient(180deg,var(--gold),var(--red))}
+.sec-sub{font-size:13px;color:var(--muted);margin-top:2px}
+.more{font-size:13px;color:var(--gold-d);font-weight:700;border:1px solid var(--line);padding:6px 14px;border-radius:999px;background:#fff;transition:.2s}
+.more:hover{background:var(--gold);color:#fff;border-color:var(--gold)}
+
+/* 导航 */
+.topbar{position:sticky;top:0;z-index:60;background:rgba(27,35,56,.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(232,180,92,.25)}
+.nav{display:flex;align-items:center;gap:18px;height:62px}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;font-weight:800;font-size:17px;letter-spacing:.5px;flex-shrink:0}
+.logo .mk{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--gold),var(--red));display:grid;place-items:center;color:#1b2338;font-size:17px;font-family:serif;box-shadow:0 0 0 2px rgba(255,255,255,.12) inset}
+.logo small{display:block;font-size:10px;color:var(--gold);font-weight:400;letter-spacing:2px}
+.navlinks{display:flex;gap:2px;overflow:auto;flex:1;scrollbar-width:none}
+.navlinks::-webkit-scrollbar{display:none}
+.navlinks a{color:#d5d9e4;font-size:13.5px;padding:8px 11px;border-radius:8px;white-space:nowrap;transition:.2s}
+.navlinks a:hover{background:rgba(232,180,92,.16);color:var(--gold)}
+.nav-cta{background:var(--gold);color:#1b2338;font-weight:700;font-size:13px;padding:9px 16px;border-radius:9px;white-space:nowrap;flex-shrink:0;transition:.2s}
+.nav-cta:hover{background:#f4c778;transform:translateY(-1px)}
+
+/* Banner */
+.hero{padding:52px 0 46px;background:
+linear-gradient(120deg,rgba(27,35,56,.94),rgba(43,53,80,.9)),
+radial-gradient(circle at 80% 20%,rgba(232,180,92,.35),transparent 55%);
+color:#fff;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:auto -60px -120px auto;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(184,69,44,.35),transparent 70%)}
+.hero-in{position:relative;z-index:2;max-width:840px}
+.hero .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:var(--gold);border:1px solid rgba(232,180,92,.4);padding:5px 13px;border-radius:999px;margin-bottom:16px;letter-spacing:.5px}
+.hero h1{font-size:33px;letter-spacing:.5px;margin-bottom:14px}
+.hero h1 em{color:var(--gold);font-style:normal}
+.hero p.lead{color:#cfd5e2;font-size:15px;max-width:700px;margin-bottom:8px}
+.hero p.lead2{color:#9ea7bb;font-size:13.5px;margin-bottom:22px}
+.searchbox{display:flex;gap:10px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);padding:8px;border-radius:13px;max-width:600px;backdrop-filter:blur(4px)}
+.searchbox input{flex:1;background:transparent;border:0;outline:0;color:#fff;font-size:14px;padding:10px 12px}
+.searchbox input::placeholder{color:#98a1b6}
+.searchbox button{background:var(--gold);color:#1b2338;border:0;font-weight:700;padding:10px 22px;border-radius:9px;cursor:pointer;font-size:14px;transition:.2s}
+.searchbox button:hover{background:#f4c778}
+.hero-btns{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}
+.hero-btns a{font-size:13px;color:#dfe4ee;border:1px solid rgba(255,255,255,.2);padding:7px 15px;border-radius:999px;transition:.2s;background:rgba(255,255,255,.04)}
+.hero-btns a:hover{background:var(--gold);color:#1b2338;border-color:var(--gold)}
+
+/* 简介 */
+.intro-grid{display:grid;grid-template-columns:1fr 300px;gap:34px;align-items:start}
+.intro-text p{margin-bottom:14px;color:#3a4257;font-size:14.5px}
+.intro-text strong{color:var(--red)}
+.aside-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px;box-shadow:var(--shadow)}
+.aside-card h3{font-size:15px;margin-bottom:12px;padding-bottom:9px;border-bottom:1px dashed var(--line);color:var(--ink2)}
+.stat-row{display:flex;justify-content:space-between;font-size:13px;padding:8px 0;border-bottom:1px dashed #eee8dc;color:#5a6173}
+.stat-row:last-child{border:0}
+.stat-row b{color:var(--red)}
+
+/* 卡片 */
+.grid-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(272px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);transition:.25s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-h);border-color:#e2cfa6}
+.cover{height:118px;display:flex;align-items:flex-end;padding:12px 14px;color:#fff;font-weight:700;font-size:15px;letter-spacing:.5px;position:relative}
+.cover::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.55))}
+.cover span{position:relative;z-index:2}
+.c1{background:linear-gradient(135deg,#2b3550,#6b4f9e)}
+.c2{background:linear-gradient(135deg,#b8452c,#e08a4a)}
+.c3{background:linear-gradient(135deg,#1f5c56,#4aa89a)}
+.c4{background:linear-gradient(135deg,#4a3b7a,#8f6bbd)}
+.c5{background:linear-gradient(135deg,#8a3b2c,#c9922f)}
+.c6{background:linear-gradient(135deg,#24425c,#4f7fa8)}
+.c7{background:linear-gradient(135deg,#5c2b4a,#a8557e)}
+.c8{background:linear-gradient(135deg,#2f4a2b,#6f9a4a)}
+.c9{background:linear-gradient(135deg,#3b3b3b,#7a7a7a)}
+.c10{background:linear-gradient(135deg,#7a4a1f,#c9922f)}
+.c11{background:linear-gradient(135deg,#2b3d6b,#5470b5)}
+.c12{background:linear-gradient(135deg,#6b2b2b,#b55555)}
+.card-body{padding:14px 15px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font-size:11.5px;padding:3px 9px;border-radius:999px;background:#f3eee3;color:#8a6a2c;border:1px solid #ece2cb}
+.tag.t2{background:#eef3f0;color:#3f7a63;border-color:#dbe8e2}
+.tag.t3{background:#f6ecea;color:#a04a36;border-color:#eddcd7}
+.card-body p{font-size:13px;color:#5e6577;line-height:1.7;flex:1}
+.meta{display:flex;gap:12px;font-size:12px;color:var(--muted);border-top:1px dashed #ece6da;padding-top:9px}
+.meta b{color:var(--red)}
+
+/* 更新列表 */
+.upd-list{display:grid;grid-template-columns:1fr 1fr;gap:0 34px}
+.upd-item{display:flex;gap:14px;padding:14px 0;border-bottom:1px dashed #e6dfd1;align-items:flex-start}
+.upd-idx{width:34px;height:34px;flex-shrink:0;border-radius:9px;background:#f3eee3;color:var(--gold-d);display:grid;place-items:center;font-weight:800;font-size:13px;border:1px solid #ece2cb}
+.upd-item h4{font-size:14.5px;margin-bottom:3px;color:var(--ink2)}
+.upd-item p{font-size:12.8px;color:#707789;line-height:1.65}
+.upd-item time{font-size:11.5px;color:var(--muted);white-space:nowrap}
+
+/* 分类 */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px}
+.cat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 16px;transition:.22s;box-shadow:0 3px 10px rgba(27,35,56,.05)}
+.cat:hover{transform:translateY(-3px);border-color:var(--gold);box-shadow:var(--shadow)}
+.cat b{display:block;font-size:15px;margin-bottom:4px;color:var(--ink2)}
+.cat small{font-size:12px;color:var(--muted);line-height:1.6;display:block}
+
+/* 正文 */
+.prose{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:32px 34px;box-shadow:var(--shadow)}
+.prose h2{font-size:22px;margin-bottom:16px;padding-left:14px;border-left:5px solid var(--gold)}
+.prose h3{font-size:16.5px;margin:24px 0 9px;color:var(--red)}
+.prose p{font-size:14.5px;color:#3d4458;margin-bottom:14px;text-align:justify}
+.prose ul{margin:0 0 16px 20px}
+.prose li{font-size:14px;color:#3d4458;margin-bottom:7px}
+.prose blockquote{border-left:4px solid var(--gold);background:#faf6ec;padding:12px 18px;border-radius:0 8px 8px 0;font-size:13.8px;color:#6b5a33;margin:18px 0}
+
+/* 指南 */
+.guide-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.guide{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px;box-shadow:0 3px 10px rgba(27,35,56,.05);transition:.22s}
+.guide:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.guide .gi{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;font-size:18px;margin-bottom:12px;background:linear-gradient(135deg,#f3eee3,#e8dcc2);color:var(--gold-d)}
+.guide b{display:block;font-size:15px;margin-bottom:6px}
+.guide p{font-size:13px;color:#616879;line-height:1.7}
+
+/* FAQ */
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;box-shadow:0 3px 10px rgba(27,35,56,.05)}
+.faq-item h3{font-size:14.8px;margin-bottom:8px;color:var(--ink2);display:flex;gap:8px}
+.faq-item h3::before{content:"Q";color:#fff;background:var(--gold-d);width:20px;height:20px;border-radius:6px;font-size:12px;display:grid;place-items:center;flex-shrink:0;margin-top:2px}
+.faq-item p{font-size:13.2px;color:#5e6577;line-height:1.75}
+
+/* 评论 */
+.cmt-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 34px}
+.cmt{padding:14px 0;border-bottom:1px dashed #e6dfd1}
+.cmt-top{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.avatar{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:13px;font-weight:700;flex-shrink:0}
+.cmt-top b{font-size:13.5px;color:var(--ink2)}
+.cmt-top time{font-size:11.5px;color:var(--muted);margin-left:auto}
+.cmt p{font-size:13.2px;color:#5a6173;line-height:1.72}
+
+/* 资讯 */
+.news-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:18px}
+.news{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px;box-shadow:0 3px 10px rgba(27,35,56,.05);transition:.22s;display:flex;flex-direction:column;gap:8px}
+.news:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#e2cfa6}
+.news h3{font-size:15.5px;color:var(--ink2);line-height:1.55}
+.news p{font-size:13px;color:#646b7d;flex:1;line-height:1.7}
+.news time{font-size:12px;color:var(--gold-d);font-weight:700}
+
+/* 订阅 + 页脚 */
+.subscribe{background:linear-gradient(120deg,#2b3550,#1b2338);color:#fff;border-radius:var(--r);padding:34px 36px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;box-shadow:var(--shadow)}
+.subscribe h2{font-size:20px;margin-bottom:6px}
+.subscribe p{font-size:13.5px;color:#aab2c4}
+.sub-form{display:flex;gap:10px;background:rgba(255,255,255,.08);padding:7px;border-radius:11px;border:1px solid rgba(255,255,255,.16)}
+.sub-form input{background:transparent;border:0;outline:0;color:#fff;padding:9px 13px;font-size:13.5px;width:190px}
+.sub-form input::placeholder{color:#8f98ad}
+.sub-form button{background:var(--gold);color:#1b2338;border:0;font-weight:700;padding:9px 20px;border-radius:8px;cursor:pointer;font-size:13.5px}
+footer{background:#151c2d;color:#9aa2b5;padding:44px 0 26px;margin-top:44px;font-size:13px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px;margin-bottom:28px}
+.foot-grid h4{color:#fff;font-size:14px;margin-bottom:12px}
+.foot-grid a{display:block;color:#9aa2b5;padding:4px 0;transition:.2s;font-size:12.8px}
+.foot-grid a:hover{color:var(--gold)}
+.foot-grid p{font-size:12.8px;line-height:1.8;color:#8b93a6}
+.copy{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;text-align:center;font-size:12.3px;color:#7a8297;line-height:1.9}
+
+@media(max-width:900px){
+.intro-grid{grid-template-columns:1fr}
+.upd-list,.faq,.cmt-grid{grid-template-columns:1fr}
+.foot-grid{grid-template-columns:1fr 1fr}
+.hero h1{font-size:26px}
+.prose{padding:24px 20px}
+}
+@media(max-width:620px){
+.navlinks{display:none}
+.hero{padding:36px 0 34px}
+.hero h1{font-size:22px}
+.grid-cards{grid-template-columns:1fr}
+.sec{padding:32px 0}
+.subscribe{padding:24px 20px}
+.sub-form input{width:130px}
+.foot-grid{grid-template-columns:1fr;gap:18px}
+h2{font-size:20px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 导航 -->
+<header class="topbar">
+<div class="wrap nav">
+<a class="logo" href="/#top">
+<div class="mk">不</div>
+<div>不良人研究所导航<small>BAD BOY LAB</small></div>
+</a>
+<nav class="navlinks">
+<a href="/#intro">专题简介</a>
+<a href="/#hot">热门推荐</a>
+<a href="/#update">最新更新</a>
+<a href="/#cat">分类索引</a>
+<a href="/#deep">深度解析</a>
+<a href="/#guide">追番指南</a>
+<a href="/#faq">常见问题</a>
+<a href="/#comment">用户评论</a>
+<a href="/#news">相关资讯</a>
+</nav>
+<a class="nav-cta" href="/#hot">进入专题</a>
+</div>
+</header>
+
+<!-- Banner -->
+<section class="hero" id="top">
+<div class="wrap hero-in">
+<div class="eyebrow">国漫专题 · 角色资料 · 追番入口</div>
+<h1>不良人研究所导航：<em>画江湖之不良人</em>资料与追番一站聚合</h1>
+<p class="lead">这里围绕《画江湖之不良人》做长期内容整理，把角色档案、剧情脉络、名场面、更新动态和同人资讯放在同一入口，方便你按需跳转。</p>
+<p class="lead2">适合新观众按顺序补番，也适合老观众查角色关系、翻旧剧情、追新一季的更新节奏。</p>
+<div class="searchbox">
+<input type="text" placeholder="搜索角色名、剧情节点或想看的关键词，例如：李星云 / 通文馆 / 第五季">
+<button type="button">搜索资料</button>
+</div>
+<div class="hero-btns">
+<a href="/#hot">热门内容</a>
+<a href="/#update">更新追踪</a>
+<a href="/#deep">剧情解析</a>
+<a href="/#cat">角色分类</a>
+<a href="/#guide">追番顺序</a>
+<a href="/#faq">新手指引</a>
+<a href="/#news">同人资讯</a>
+</div>
+</div>
+</section>
+
+<!-- 专题简介 -->
+<section class="sec" id="intro">
+<div class="wrap">
+<div class="sec-head">
+<div class="st"><span class="bar"></span><div><h2>不良人研究所导航专题简介</h2><div class="sec-sub">这个页面到底能帮你找到什么、适合谁看</div></div></div>
+<a class="more" href="/#deep">查看深度解析</a>
+</div>
+<div class="intro-grid">
+<div class="intro-text">
+<p>《画江湖之不良人》是国产成人向动画里少见的长期连载作品，从第一季到后续多季，世界观从唐末乱世铺到江湖与朝堂交织，人物关系密集、势力众多、时间线跨度大。正因为信息量太大，很多观众在搜索“不良人研究所导航”时，真正想找的往往不是一篇简单介绍，而是一个能把分散信息重新整理好的入口——谁是谁、哪一季讲了什么、哪个势力在哪段剧情里登场、新一季什么时候更新。</p>
+<p>这个页面就是按这个需求搭建的。<strong>不良人研究所导航</strong>把角色档案、剧情脉络、势力关系、名场面盘点、追番顺序和更新动态集中到同一个页面，配合分类入口和搜索框，你可以按角色、按季数、按关键词三条路径浏览。对刚入坑的新观众，我们更推荐从追番指南和入门顺序看起；对已经追了多年的老观众，角色关系图谱和深度解析更有价值。</p>
+<p>页面内容会持续更新。需要说明的是，这里是内容整理与导航站点，不提供剧集在线播放资源，所有关于剧情、角色、更新的描述都以官方公开信息和观众普遍讨论为基础，供参考与交流使用。如果你正在找同类国漫专题站，也可以把本站当作长期收藏的入口之一。</p>
+</div>
+<aside class="aside-card">
+<h3>专题速览</h3>
+<div class="stat-row"><span>内容类型</span><b>国漫 · 武侠 · 玄幻</b></div>
+<div class="stat-row"><span>信息来源</span><b>官方 + 观众讨论</b></div>
+<div class="stat-row"><span>整理板块</span><b>10 个专题栏目</b></div>
+<div class="stat-row"><span>内容数量</span><b>持续补充</b></div>
+<div class="stat-row"><span>最近更新</span><b>2026-11-07</b></div>
+<div class="stat-row"><span>适合人群</span><b>新老观众</b></div>
+</aside>
+</div>
+</div>
+</section>
+
+<!-- 热门推荐 -->
+<section class="sec" id="hot">
+<div class="wrap">
+<div class="sec-head">
+<div class="st"><span class="bar"></span><div><h2>热门内容推荐</h2><div class="sec-sub">角色档案、剧情专题与看点整理，挑一个感兴趣的入口</div></div></div>
+<a class="more" href="/#update">看最新更新</a>
+</div>
+<div class="grid-cards">
+
+<div class="card"><div class="cover c1"><span>李星云 · 主角档案</span></div>
+<div class="card-body"><div class="tags"><span class="tag">主角</span><span class="tag t2">身份线</span><span class="tag t3">成长弧光</span></div>
+<p>从青涩少年到背负身世的江湖人，梳理他的身份认知、性格转变与关键抉择节点。</p>
+<div class="meta"><span>热度 <b>9821</b></span><span>已整理</span><span>档案型</span></div></div></div>
+
+<div class="card"><div class="cover c2"><span>不良人组织全解</span></div>
+<div class="card-body"><div class="tags"><span class="tag">势力</span><span class="tag t2">架构</span><span class="tag t3">人物表</span></div>
+<p>不良帅、天罡星、各级成员的关系与行事逻辑，一次看懂这个贯穿全季的核心组织。</p>
+<div class="meta"><span>热度 <b>9140</b></span><span>重点栏目</span><span>图谱型</span></div></div></div>
+
+<div class="card"><div class="cover c3"><span>通文馆与幻音坊</span></div>
+<div class="card-body"><div class="tags"><span class="tag">势力对比</span><span class="tag t2">江湖</span><span class="tag t3">立场</span></div>
+<p>两大势力在乱世中的站位、手段与代表人物，适合想理清阵营关系的观众。</p>
+<div class="meta"><span>热度 <b>7655</b></span><span>已整理</span><span>对比型</span></div></div></div>
+
+<div class="card"><div class="cover c4"><span>姬如雪 · 角色解析</span></div>
+<div class="card-body"><div class="tags"><span class="tag">女性角色</span><span class="tag t2">情感线</span><span class="tag t3">成长</span></div>
+<p>从登场到后期变化，她的立场、行动动机以及与主线人物的关系梳理。</p>
+<div class="meta"><span>热度 <b>8023</b></span><span>已整理</span><span>档案型</span></div></div></div>
+
+<div class="card"><div class="cover c5"><span>名场面盘点合集</span></div>
+<div class="card-body"><div class="tags"><span class="tag">名场面</span><span class="tag t2">高光</span><span class="tag t3">台词</span></div>
+<p>按季数整理讨论度高的关键战斗与台词片段，方便回看与二次讨论。</p>
+<div class="meta"><span>热度 <b>8890</b></span><span>持续补充</span><span>盘点型</span></div></div></div>
+
+<div class="card"><div class="cover c6"><span>世界观与时间线</span></div>
+<div class="card-body"><div class="tags"><span class="tag">世界观</span><span class="tag t2">时间线</span><span class="tag t3">背景</span></div>
+<p>把唐末乱世背景、多方割据与剧情推进按时间顺序串起来，减少看剧混乱感。</p>
+<div class="meta"><span>热度 <b>7233</b></span><span>已整理</span><span>年表型</span></div></div></div>
+
+<div class="card"><div class="cover c7"><span>张子凡与陆林轩</span></div>
+<div class="card-body"><div class="tags"><span class="tag">角色关系</span><span class="tag t2">支线</span><span class="tag t3">情感</span></div>
+<p>这对组合在剧情中的作用、互动变化与观众讨论焦点，附关系说明。</p>
+<div class="meta"><span>热度 <b>6410</b></span><span>已整理</span><span>关系型</span></div></div></div>
+
+<div class="card"><div class="cover c8"><span>追番顺序指南</span></div>
+<div class="card-body"><div class="tags"><span class="tag">新手</span><span class="tag t2">顺序</span><span class="tag t3">补番</span></div>
+<p>从第一季到最新季的推荐观看顺序，标注哪些内容可以按兴趣跳看。</p>
+<div class="meta"><span>热度 <b>9560</b></span><span>推荐</span><span>指南型</span></div></div></div>
+
+<div class="card"><div class="cover c9"><span>反派群像分析</span></div>
+<div class="card-body"><div class="tags"><span class="tag">反派</span><span class="tag t2">动机</span><span class="tag t3">群像</span></div>
+<p>不是所有对手都脸谱化，整理主要反派的动机、手段与结局走向。</p>
+<div class="meta"><span>热度 <b>6022</b></span><span>已整理</span><span>分析型</span></div></div></div>
+
+<div class="card"><div class="cover c10"><span>武学与招式整理</span></div>
+<div class="card-body"><div class="tags"><span class="tag">武学</span><span class="tag t2">招式</span><span class="tag t3">设定</span></div>
+<p>把剧中出现的功法、招式与使用条件做归类，方便理解战斗逻辑。</p>
+<div class="meta"><span>热度 <b>5788</b></span><span>持续补充</span><span>设定型</span></div></div></div>
+
+<div class="card"><div class="cover c11"><span>各季口碑走势</span></div>
+<div class="card-body"><div class="tags"><span class="tag">评价</span><span class="tag t2">口碑</span><span class="tag t3">走势</span></div>
+<p>从观众反馈角度整理各季讨论重点与口碑变化，帮助建立合理期待。</p>
+<div class="meta"><span>热度 <b>5340</b></span><span>已整理</span><span>观察型</span></div></div></div>
+
+<div class="card"><div class="cover c12"><span>同人与二创资料区</span></div>
+<div class="card-body"><div class="tags"><span class="tag">同人</span><span class="tag t2">二创</span><span class="tag t3">周边</span></div>
+<p>汇总同人创作方向、热门话题与周边讨论，属于社区向的延伸内容入口。</p>
+<div class="meta"><span>热度 <b>4876</b></span><span>社区向</span><span>聚合型</span></div></div></div>
+
+</div>
+</div>
+</section>
+
+<!-- 最新更新 -->
+<section class="sec" id="update">
+<div class="wrap">
+<div class="sec-head">
+<div class="st"><span class="bar"></span><div><h2>最新更新与动态追踪</h2><div class="sec-sub">截至 2026 年 11 月 7 日的整理内容</div></div></div>
+<a class="more" href="/#news">查看资讯</a>
+</div>
+<div class="upd-list">
+<div class="upd-item"><div class="upd-idx">01</div><div><h4>角色档案库补充：李星云关系网更新</h4><p>补充了后期阶段与多方势力的互动关系，修正了此前两处立场标注。</p></div><time>11-07</time></div>
+<div class="upd-item"><div class="upd-idx">02</div><div><h4>深度解析新增“节奏与消费体验”小节</h4><p>讨论多季连载的结构特点，以及新观众容易卡住的段落。</p></div><time>11-06</time></div>
+<div class="upd-item"><div class="upd-idx">03</div><div><h4>名场面盘点更新至最新季讨论热点</h4><p>按观众讨论热度重新排序，删去了重复条目。</p></div><time>11-05</time></div>
+<div class="upd-item"><div class="upd-idx">04</div><div><h4>FAQ 新增“先看哪一季”问答</h4><p>针对新手最常见的顺序问题补充了 150 字左右说明。</p></div><time>11-04</time></div>
+<div class="upd-item"><div class="upd-idx">05</div><div><h4>势力关系图谱修订：通文馆部分</h4><p>调整了层级表示方式，减少误读可能。</p></div><time>11-03</time></div>
+<div class="upd-item"><div class="upd-idx">06</div><div><h4>追番指南增加移动端阅读提示</h4><p>说明页面在手机上的浏览顺序与收藏方式。</p></div><time>11-02</time></div>
+<div class="upd-item"><div class="upd-idx">07</div><div><h4>用户评论精选轮换</h4><p>保留讨论价值较高的评论，新增若干中性评价。</p></div><time>11-01</time></div>
+<div class="upd-item"><div class="upd-idx">08</div><div><h4>武学招式表补充两条条目</h4><p>属于设定整理向内容，标注了出处与讨论分歧。</p></div><time>10-31</time></div>
+<div class="upd-item"><div class="upd-idx">09</div><div><h4>相关资讯栏目新增口碑观察稿</h4><p>从观众讨论角度整理多季评价变化。</p></div><time>10-30</time></div>
+<div class="upd-item"><div class="upd-idx">10</div><div><h4>分类索引优化标签结构</h4><p>按角色、势力、剧情、设定四类重新归并。</p></div><time>10-29</time></div>
+</div>
+</div>
+</section>
+
+<!-- 分类索引 -->
+<section class="sec" id="cat">
+<div class="wrap">
+<div class="sec-head">
+<div class="st"><span class="bar"></span><div><h2>分类索引入口</h2><div class="sec-sub">按角色、势力、剧情、设定四条主线浏览</div></div></div>
+<a class="more" href="/#hot">返回热门</a>
+</div>
+<div class="cat-grid">
+<div class="cat"><b>主角与核心角色</b><small>李星云、姬如雪、张子凡等核心人物档案与成长线。</small></div>
+<div class="cat"><b>势力与组织</b><small>不良人、通文馆、幻音坊等阵营构成与立场。</small></div>
+<div class="cat"><b>剧情时间线</b><small>按季数与事件顺序梳理主线推进。</small></div>
+<div class="cat"><b>名场面与台词</b><small>高讨论度片段、经典台词与回看入口。</small></div>
+<div class="cat"><b>武学与设定</b><small>功法、招式、兵器与世界观规则整理。</small></div>
+<div class="cat"><b>反派群像</b><small>主要对手的动机、手段与结局走向。</small></div>
+<div class="cat"><b>追番与入门</b><small>观看顺序、补番建议与避坑提示。</small></div>
+<div class="cat"><b>同人与周边</b><small>二创方向、社区话题与周边讨论聚合。</small></div>
+</div>
+</div>
+</section>
+
+<!-- 深度解析 -->
+<section class="sec" id="deep">
+<div class="wrap">
+<div class="sec-head">
+<div class="st"><span class="bar"></span><div><h2>深度解析：为什么“不良人研究所导航”值得长期收藏</h2><div class="sec-sub">从题材特点、人物塑造到节奏体验的编辑视角</div></div></div>
+</div>
+<div class="prose">
+<h2>一部多季连载国漫，信息整理本身就是刚需</h2>
+<p>《画江湖之不良人》开播至今已经积累了大量内容，世界观从唐末乱世切入，朝堂与江湖两条线并行推进，登场人物数量多、势力关系复杂、时间跨度也不小。对观众来说，最直接的困难不是“好不好看”，而是“看不看得明白”。这也是<strong>不良人研究所导航</strong>这类整理型页面的价值所在：它不替代观看，但能把观众在观看过程中产生的疑问——谁和谁是一伙的、这个势力什么时候登场、这段剧情属于哪一季——用结构化方式呈现出来。</p>
+
+<h3>题材特点：武侠外壳下的权力叙事</h3>
+<p>表面看它是武侠动画，有功法、有门派、有江湖恩怨；但真正撑起长线剧情的是权力叙事。多方势力在乱世中各怀打算，主角被夹在身世、立场和个人选择之间，很多冲突不是单纯的正邪对立，而是利益与信念的碰撞。这种设定让剧情具备反复讨论的空间，也意味着观众如果只看片段，很容易对人物动机产生误解。页面里的势力对比与角色关系模块，就是为降低这类理解成本而设。</p>
+
+<h3>内容吸引点：人物弧光比设定更抓人</h3>
+<p>不少观众最初被战斗场面吸引，留下来却是因为人物。主角从被动卷入到主动选择，配角各自有立场与代价，反派的动机也并非全无逻辑。整理角色档案时，我们更关注“他为什么这么做”，而不是简单贴标签。这也是深度解析模块反复强调人物弧光的原因：把行为放回剧情语境，很多争议点其实能看明白。</p>
+
+<h3>角色与势力分析：关系图谱比单条介绍更有用</h3>
+<p>单看某个人物介绍，容易记住名字却记不住关系。因此页面把角色放在势力框架里呈现：先看阵营，再看个人，最后看交叉关系。对搜索“不良人研究所导航”的用户来说，这种层级化信息通常比零散段落更高效。尤其是跨季回顾时，关系图谱能快速帮你回忆起某段剧情的参与方。</p>
+
+<h3>视听与表现力：动作设计与氛围营造</h3>
+<p>作为长期连载作品，各季在画面、动作设计和氛围营造上存在差异，这也是观众讨论较多的话题。战斗段落的镜头调度、配乐与情绪推进，往往决定一个名场面能不能被记住。页面在名场面盘点中会标注该片段的讨论点，是动作设计出彩，还是台词与情绪更打动人，方便你按兴趣回看。</p>
+
+<h3>节奏与消费体验：连载作品的观看策略</h3>
+<p>多季连载有个现实问题：前期铺垫较长，中期信息密集，后期收束节奏加快。新观众如果从中间切入，容易一头雾水；老观众回顾时也可能跳着看。比较稳妥的方式是先按季数顺序过一遍主线，再用角色档案和势力模块补细节。页面里的追番指南就是按这个思路写的，不追求一次看完，而是给出可执行的浏览路径。</p>
+
+<h3>适合人群与同类比较</h3>
+<p>喜欢武侠题材、能接受多线叙事的观众适配度较高；偏好单元剧、快节奏爽感的观众可能需要一点耐心。与同类型国漫相比，它的优势在于世界观完整、人物关系有厚度，劣势则是前期门槛偏高。把这一点说清楚，比单纯推荐更有参考价值。</p>
+
+<blockquote>搜索这个词的人，通常不是想找一句评价，而是想找一个能把角色、剧情、更新三件事放在一起看的入口。这也是本页面的定位。</blockquote>
+</div>
+</div>
+</section>
+
+<!-- 追番指南 -->
+<section class="sec" id="guide">
+<div class="wrap">
+<div class="sec-head">
+<div class="st"><span class="bar"></span><div><h2>追番与阅读指南</h2><div class="sec-sub">页面怎么用、内容怎么看，给新老观众各一条路径</div></div></div>
+<a class="more" href="/#faq">常见问题</a>
+</div>
+<div class="guide-grid">
+<div class="guide"><div class="gi">序</div><b>先看顺序，再看细节</b><p>新观众建议先过一遍追番顺序，再回来看角色档案，避免信息过载。</p></div>
+<div class="guide"><div class="gi">筛</div><b>分类筛选更高效</b><p>按角色、势力、剧情、设定四条主线筛选，比从头翻更省时间。</p></div>
+<div class="guide"><div class="gi">移</div><b>移动端阅读友好</b><p>手机端已做适配，卡片与列表自动单列，适合碎片时间浏览。</p></div>
+<div class="guide"><div class="gi">藏</div><b>适合收藏长期看</b><p>内容持续补充，收藏本页可随时回来看更新动态与新增解析。</p></div>
+<div class="guide"><div class="gi">延</div><b>相关推荐扩展路径</b><p>从一个人物跳到所属势力，再跳到相关剧情，浏览路径是连贯的。</p></div>
+<div class="guide"><div class="gi">辨</div><b>区分设定与讨论</b><p>页面会标注哪些属于公开设定，哪些属于观众讨论中的观点。</p></div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq">
+<div class="wrap">
+<div class="sec-head">
+<div class="st"><span class="bar"></span><div><h2>常见问题答疑</h2><div class="sec-sub">围绕观看顺序、内容类型与资料使用的 6 个问题</div></div></div>
+</div>
+<div class="faq">
+<div class="faq-item"><h3>不良人研究所导航主要提供什么内容？</h3><p>它是一份围绕《画江湖之不良人》的整理型导航页面，主要提供角色档案、势力关系、剧情脉络、名场面盘点、追番顺序和更新动态等内容索引，帮助观众快速定位想了解的信息。本站不提供剧集播放资源，属于内容整理与交流向的专题页。</p></div>
+<div class="faq-item"><h3>没看过前作，应该从哪一季开始看？</h3><p>建议按季数顺序从第一季看起，因为人物关系和世界观是逐步铺开的，跳看容易对立场和动机产生误解。如果时间有限，可以先看第一季主线，再用本页的角色档案补齐关键人物背景，最后回到后续季数继续。</p></div>
+<div class="faq-item"><h3>这个页面适合哪类观众？</h3><p>刚入坑、想理清人物关系的新观众，以及追了多季、需要回顾剧情和查角色资料的老观众都适用。前者推荐从追番指南与常见问题入手，后者更适合直接看势力关系图谱与深度解析，按需取用即可。</p></div>
+<div class="faq-item"><h3>页面里的角色信息会持续更新吗？</h3><p>会。页面以长期整理为目标，角色档案、名场面盘点、势力关系与资讯栏目都会随讨论热点补充和修订。更新记录集中在“最新更新与动态追踪”模块，方便你判断哪些内容是新补充的。</p></div>
+<div class="faq-item"><h3>想找同类国漫专题，有什么思路？</h3><p>可以先确定自己偏好的是武侠、玄幻还是群像叙事，再按题材关键词搜索对应的专题站。本页底部与相关推荐中也有同类内容入口，适合作为扩展浏览的起点，避免在零散信息中反复跳转。</p></div>
+<div class="faq-item"><h3>如何判断页面内容是否可靠？</h3><p>页面尽量以官方公开信息和普遍讨论为基础，并在涉及争议处标注属于观众观点。遇到与正片不一致的地方，建议以正片内容为准。若发现明显错误，可通过评论或纠错入口反馈，我们会核实后修订。</p></div>
+</div>
+</div>
+</section>
+
+<!-- 用户评论 -->
+<section class="sec" id="comment">
+<div class="wrap">
+<div class="sec-head">
+<div class="st"><span class="bar"></span><div><h2>观众评论与讨论</h2><div class="sec-sub">近期观众留言精选，观点不代表本站立场</div></div></div>
+<a class="more" href="/#news">相关资讯</a>
+</div>
+<div class="cmt-grid">
+<div class="cmt"><div class="cmt-top"><div class="avatar" style="background:#6b4f9e">夜</div><b>夜航船不眠</b><time>11-06</time></div><p>角色关系这块整理得比我预想的清楚，之前看的时候一直搞不清谁跟谁是一伙的，现在总算理顺了。</p></div>
+<div class="cmt"><div class="cmt-top"><div class="avatar" style="background:#b8452c">山</div><b>山间一壶茶</b><time>11-05</time></div><p>追番顺序建议写得挺实在，没有一上来就让人全看完，给了可以跳着补的思路。</p></div>
+<div class="cmt"><div class="cmt-top"><div class="avatar" style="background:#1f5c56">小</div><b>小楼听雨人</b><time>11-04</time></div><p>名场面盘点还可以再细一点，有些我觉得很关键的段落没收录进去，希望后面补上。</p></div>
+<div class="cmt"><div class="cmt-top"><div class="avatar" style="background:#4a3b7a">旧</div><b>旧梦不须记</b><time>11-03</time></div><p>老观众了，主要是来查早期剧情的，势力那部分对我帮助最大，省得反复翻正片。</p></div>
+<div class="cmt"><div class="cmt-top"><div class="avatar" style="background:#8a3b2c">风</div><b>风起洛阳桥</b><time>11-02</time></div><p>节奏分析那段说得挺中肯，前期铺垫确实长，能接受的人会很喜欢，接受不了的可能就弃了。</p></div>
+<div class="cmt"><div class="cmt-top"><div class="avatar" style="background:#24425c">阿</div><b>阿七不加糖</b><time>11-01</time></div><p>希望能多加点台词整理，有些台词印象很深但记不清在哪一集了。</p></div>
+<div class="cmt"><div class="cmt-top"><div class="avatar" style="background:#5c2b4a">半</div><b>半盏灯</b><time>10-31</time></div><p>整体还行，就是个别角色评价感觉偏主观，不过页面有标注是讨论观点，可以接受。</p></div>
+<div class="cmt"><div class="cmt-top"><div class="avatar" style="background:#2f4a2b">林</div><b>林深见鹿</b><time>10-30</time></div><p>新手友好，我朋友刚入坑，直接把这个页面发过去了，比我自己讲省事多了。</p></div>
+<div class="cmt"><div class="cmt-top"><div class="avatar" style="background:#3b3b3b">陆</div><b>陆仟不加班</b><time>10-29</time></div><p>武学招式部分有点少，感觉可以再整理得系统一些，最好能标出处。</p></div>
+<div class="cmt"><div class="cmt-top"><div class="avatar" style="background:#7a4a1f">慢</div><b>慢半拍先生</b><time>10-28</time></div><p>页面加载速度不错，手机上看起来也不挤，这点比很多资料站强。</p></div>
+<div class="cmt"><div class="cmt-top"><div class="avatar" style="background:#2b3d6b">青</div><b>青衫旧客</b><time>10-27</time></div><p>反派群像那段写得好，确实不是简单的坏，动机交代清楚了。</p></div>
+<div class="cmt"><div class="cmt-top"><div class="avatar" style="background:#6b2b2b">一</div><b>一页知秋</b><time>10-26</time></div><p>更新动态更新得挺勤，几天来看一次都有新东西，收藏了。</p></div>
+<div class="cmt"><div class="cmt-top"><div class="avatar" style="background:#2b3550">知</div><b>知不足斋</b><time>10-25</time></div><p>希望口碑走势那块能附上更具体的讨论来源，现在稍微笼统了点。</p></div>
+<div class="cmt"><div class="cmt-top"><div class="avatar" style="background:#c9922f">橘</div><b>橘子汽水味</b><time>10-24</time></div><p>我是被同人带进来的，本来只想看看图，结果把角色档案也看完了，意外入坑。</p></div>
+<div class="cmt"><div class="cmt-top"><div class="avatar" style="background:#5470b5">南</div><b>南风知我意</b><time>10-23</time></div><p>中立评价一下：资料整理不错，但不是所有内容都够深，适合入门和查漏补缺。</p></div>
+</div>
+</div>
+</section>
+
+<!-- 相关资讯 -->
+<section class="sec" id="news">
+<div class="wrap">
+<div class="sec-head">
+<div class="st"><span class="bar"></span><div><h2>相关资讯与观察</h2><div class="sec-sub">围绕内容、角色讨论与口碑的动态整理</div></div></div>
+<a class="more" href="/#comment">看评论</a>
+</div>
+<div class="news-grid">
+<div class="news"><h3>多季连载国漫的信息整理需求正在上升</h3><time>2026-11-07</time><p>随着长篇国漫内容体量增大，观众对角色关系与剧情梳理类页面的需求明显增加，专题导航型内容开始受到关注。</p></div>
+<div class="news"><h3>角色档案类内容为什么更受老观众欢迎</h3><time>2026-11-05</time><p>对追了多季的观众来说，查角色比追更新更常用，档案型模块的访问深度通常高于单篇资讯。</p></div>
+<div class="news"><h3>从观众讨论看各季口碑变化</h3><time>2026-11-03</time><p>不同季数的讨论焦点存在差异，动作设计、剧情节奏与人物塑造是被提及最多的三个维度。</p></div>
+<div class="news"><h3>追番顺序类内容的使用场景在扩展</h3><time>2026-11-01</time><p>除了新观众，部分老观众也会用顺序指引做阶段性回顾，说明这类内容具备长期价值。</p></div>
+<div class="news"><h3>同人创作与正片讨论的互动关系</h3><time>2026-10-30</time><p>同人内容在一定程度上延长了作品讨论周期，也让角色档案类页面的访问来源更加多元。</p></div>
+<div class="news"><h3>专题导航站的移动端阅读体验成关键</h3><time>2026-10-28</time><p>碎片化浏览习惯下，页面结构是否清晰、能否快速定位，直接影响用户是否愿意收藏与回访。</p></div>
+</div>
+</div>
+</section>
+
+<!-- 订阅 -->
+<section class="sec" id="sub">
+<div class="wrap">
+<div class="subscribe">
+<div>
+<h2>订阅更新提醒</h2>
+<p>留下邮箱，角色档案、剧情解析与更新动态补充时第一时间通知你。</p>
+</div>
+<div class="sub-form">
+<input type="email" placeholder="输入你的邮箱地址">
+<button type="button">订阅</button>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 页脚 -->
+<footer>
+<div class="wrap">
+<div class="foot-grid">
+<div>
+<h4>不良人研究所导航</h4>
+<p>围绕国漫《画江湖之不良人》的内容整理与导航专题站，提供角色档案、势力关系、剧情脉络、追番顺序与更新动态等参考信息。本站为内容整理站点，不提供剧集播放资源。</p>
+</div>
+<div>
+<h4>专题栏目</h4>
+<a href="/#intro">专题简介</a>
+<a href="/#hot">热门推荐</a>
+<a href="/#update">更新追踪</a>
+<a href="/#deep">深度解析</a>
+<a href="/#cat">分类索引</a>
+</div>
+<div>
+<h4>使用帮助</h4>
+<a href="/#guide">追番指南</a>
+<a href="/#faq">常见问题</a>
+<a href="/#comment">用户评论</a>
+<a href="/#news">相关资讯</a>
+<a href="/#sub">订阅提醒</a>
+</div>
+<div>
+<h4>友情链接</h4>
+<a href="/#top">国漫专题首页</a>
+<a href="/#hot">角色资料库</a>
+<a href="/#deep">剧情解析专栏</a>
+<a href="/#news">同人资讯入口</a>
+<a href="/#faq">内容纠错反馈</a>
+</div>
+</div>
+<div class="copy">
+<p>© 2026 不良人研究所导航 · 内容整理与导航专题页</p>
+<p>免责声明：本站所有内容基于官方公开信息与观众普遍讨论整理，仅供学习交流参考，不构成任何官方表述；如涉及版权问题请联系处理，相关设定请以正片为准。</p>
+</div>
+</div>
+</footer>
+
+</body>
+  </html>
